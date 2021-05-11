@@ -46,8 +46,8 @@ router.post('/users_info/regist', function (req, res) {
 
 
 const config = {
-    client_id: 'a48f1774b2f9ce18125e',
-    client_secret: '7529deef71dfcbd6de7a21150692ddbd64c31552'
+    client_id: 'a48f1774b2f9ce************',
+    client_secret: '7529deef71dfcbd6de7a21150692d************'
 }
 
 // 登录接口
@@ -104,8 +104,8 @@ router.post('/sms', function (req, res) {
     }
     if (user.mobile) {
         console.log("yess----")
-        const accessKeyId = "LTAI4GENiorhFQnPiXULBAA4"//你的keyID
-        const secretAccessKey = "OVfZDPoqgs5kqAxYXxwjq3I91xChZ0"//你的密钥
+        const accessKeyId = "LTAI4GENiorhFQnPiXU********"//你的keyID
+        const secretAccessKey = "OVfZDPoqgs5kqAxYXxwjq********"//你的密钥
         let smsClient = new SMSClient({ accessKeyId, secretAccessKey })
         smsClient.sendSMS({
             PhoneNumbers: user.mobile,//必填:待发送手机号。支持以逗号分隔的形式进行批量调用，批量上限为1000个手机号码,批量调用相对于单条调用及时性稍有延迟,验证码类型的短信推荐使用单条调用的方式；发送国际/港澳台消息时，接收号码格式为：国际区号+号码，如“85200000000”
