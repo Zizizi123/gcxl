@@ -214,6 +214,7 @@ router.get('/s_sign_student', function (req, res) {
         jsonWrite(res, success);
     })
 });
+
 //////////课程签到情况表//////////
 router.get('/s_sign_situation', function (req, res) {
     console.log('get s_sign_situation called');

@@ -145,6 +145,7 @@ module.exports = {
             callback(result);
         });
     },
+    
     c_sign: function (user, callback) {
         //console.log(user.selectSchool);
         pool.query(serverSqlMap.c_sign, [user.selectSchool, user.selectCollege, user.selectCourse], function (error, result) {

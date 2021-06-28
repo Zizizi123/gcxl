@@ -10,7 +10,7 @@ module.exports = {
 
     //老师端
     add_course: function (classCourse, callback) {
-        pool.query(classCourseSqlMap.add_course, [classCourse.keCheng, classCourse.school, classCourse.xueYuan, classCourse.xueQi, classCourse.CourseWeek, classCourse.xueXiYaoQiu, classCourse.JiaoXueJinDu, classCourse.kaoShiAnPai, classCourse.isCreating], function (error, result) {
+        pool.query(classCourseSqlMap.add_course, [classCourse.keCheng, classCourse.school, classCourse.xueYuan, classCourse.xueQi, classCourse.CourseWeek, classCourse.xueXiYaoQiu, classCourse.JiaoXueJinDu, classCourse.kaoShiAnPai], function (error, result) {
             if (error) throw error;
             // callback(result.affectedRows > 0);
             callback(result);
