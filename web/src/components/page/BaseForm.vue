@@ -3,7 +3,7 @@
         <div class="crumbs">
             <el-breadcrumb separator="/">
                 <el-breadcrumb-item><i class="el-icon-date"></i> 表单</el-breadcrumb-item>
-                <el-breadcrumb-item>基础表单</el-breadcrumb-item>
+                <el-breadcrumb-item>基本表单</el-breadcrumb-item>
             </el-breadcrumb>
         </div>
         <div class="container">
@@ -14,8 +14,9 @@
                     </el-form-item>
                     <el-form-item label="选择器">
                         <el-select v-model="form.region" placeholder="请选择">
-                            <el-option key="lyj" label="林于杰" value="lyj"></el-option>
-                            <el-option key="ly" label="林义" value="ly"></el-option>
+                            <el-option key="bbk" label="步步高" value="bbk"></el-option>
+                            <el-option key="xtc" label="小天才" value="xtc"></el-option>
+                            <el-option key="imoo" label="imoo" value="imoo"></el-option>
                         </el-select>
                     </el-form-item>
                     <el-form-item label="日期时间">
@@ -35,14 +36,16 @@
                     </el-form-item>
                     <el-form-item label="多选框">
                         <el-checkbox-group v-model="form.type">
-                            <el-checkbox label="林于杰" name="type"></el-checkbox>
-                            <el-checkbox label="林义" name="type"></el-checkbox>
+                            <el-checkbox label="步步高" name="type"></el-checkbox>
+                            <el-checkbox label="小天才" name="type"></el-checkbox>
+                            <el-checkbox label="imoo" name="type"></el-checkbox>
                         </el-checkbox-group>
                     </el-form-item>
                     <el-form-item label="单选框">
                         <el-radio-group v-model="form.resource">
-                            <el-radio label="林于杰"></el-radio>
-                            <el-radio label="林义"></el-radio>
+                            <el-radio label="步步高"></el-radio>
+                            <el-radio label="小天才"></el-radio>
+                            <el-radio label="imoo"></el-radio>
                         </el-radio-group>
                     </el-form-item>
                     <el-form-item label="文本框">
@@ -65,40 +68,6 @@
             return {
                 options:[
                     {
-                        value: 'fujian',
-                        label: '福建省',
-                        children: [
-                            {
-                                value: 'fuzhou',
-                                label: '福州市',
-                                children: [
-                                    {
-                                        value: 'minhou',
-                                        label: '闽侯县'
-                                    },
-                                    {
-                                        value: 'gulou',
-                                        label: '鼓楼区'
-                                    }
-                                ]
-                            },
-                            {
-                                value: 'xiamen',
-                                label: '厦门市',
-                                children: [
-                                    {
-                                        value: 'siming',
-                                        label: '思明区'
-                                    },
-                                    {
-                                        value: 'xiangan',
-                                        label: '翔安区'
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
                         value: 'guangdong',
                         label: '广东省',
                         children: [
@@ -109,6 +78,40 @@
                                     {
                                         value: 'tianhe',
                                         label: '天河区'
+                                    },
+                                    {
+                                        value: 'haizhu',
+                                        label: '海珠区'
+                                    }
+                                ]
+                            },
+                            {
+                                value: 'dongguan',
+                                label: '东莞市',
+                                children: [
+                                    {
+                                        value: 'changan',
+                                        label: '长安镇'
+                                    },
+                                    {
+                                        value: 'humen',
+                                        label: '虎门镇'
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        value: 'hunan',
+                        label: '湖南省',
+                        children: [
+                            {
+                                value: 'changsha',
+                                label: '长沙市',
+                                children: [
+                                    {
+                                        value: 'yuelu',
+                                        label: '岳麓区'
                                     }
                                 ]
                             }
@@ -121,8 +124,8 @@
                     date1: '',
                     date2: '',
                     delivery: true,
-                    type: ['林于杰'],
-                    resource: '林义',
+                    type: ['步步高'],
+                    resource: '小天才',
                     desc: '',
                     options: []
                 }
